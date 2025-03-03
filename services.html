@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hireitc.com</title>
+    <title>Our Services - HIREITC LLC</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
     <style>
@@ -16,7 +16,7 @@
             padding: 0;
             overflow-x: hidden;
         }
-        
+
         #particles-js {
             position: fixed;
             width: 100%;
@@ -25,7 +25,7 @@
             left: 0;
             z-index: -1;
         }
-        
+
         .navbar {
             display: flex;
             justify-content: center;
@@ -35,29 +35,19 @@
             padding: 15px;
             border-radius: 10px;
         }
-        
+
         .navbar a {
             color: white;
             text-decoration: none;
             padding: 10px 20px;
             transition: 0.3s;
         }
-        
+
         .navbar a:hover {
             color: #ffcc66;
             transform: scale(1.1);
         }
-        
-        .glass-panel {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 30px;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
-            margin: 50px auto;
-            max-width: 600px;
-        }
-        
+
         .logo {
             width: 200px;
             height: 200px;
@@ -65,7 +55,7 @@
             border: 5px solid #ffcc66;
             margin: 20px auto;
         }
-        
+
         .typing-text {
             font-size: 20px;
             color: #ffcc66;
@@ -75,31 +65,92 @@
             display: inline-block;
             animation: typing 4s steps(40, end) infinite alternate;
         }
-        
+
         @keyframes typing {
             from { width: 0; }
             to { width: 100%; }
         }
-        
+
+        .container {
+            margin-top: 30px;
+            max-width: 800px;
+            margin: auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            outline: none;
+        }
+
+        .contact-form button {
+            background-color: #ffcc66;
+            color: #141E30;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0px 0px 15px #ffcc66;
+        }
+
+        .contact-form button:hover {
+            background-color: #ffcc99;
+            box-shadow: 0px 0px 20px #ffcc99;
+        }
     </style>
 </head>
 <body>
     <div id="particles-js"></div>
-    
+
     <div class="navbar">
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
         <a href="OurMissions.html">Our Mission</a>
     </div>
-    
+
     <img src="circular_logo.png" alt="Company Logo" class="logo">
+
+    <div class="container">
+        <h1>Our Services</h1>
+        <p class="typing-text">New services coming soon. Stay tuned!</p>
+
+        <p>Our services to help your businesses use technology to achieve the goals.
+
+            We also provide professionals who offer expertise in areas such as hardware, software, networks, and project management.
+            
+            Our main goal is to reduce costs, improve efficiency, increase expertise/flexibility, scalability ,faster implementation of technology,improve security, cost savings and risk mitigation.
+            </p>
+
+            <h>Better yet, see us in person!</h>
+            <p>We love our customers, so feel free to contacts us to setup some time for quick meet during normal business hours.</p>
     
-    <div class="glass-panel">
-        <h1>Welcome to HIREITC LLC</h1>
-        <p class="typing-text">Empowering businesses with cutting-edge IT solutions...</p>
     </div>
-    
+    <div class="contact">
+        <p><strong>CONTACT US</strong></p>
+        <p><a href="tel:+8452357105">+8452357105</a></p>
+        <p><a href="mailto:rg@hireitc.com">rg@hireitc.com</a></p>
+    </div>
+
     <script>
+        function redirectAfterSubmit() {
+            setTimeout(function () {
+                window.location.href = "thank-you.html"; // Redirect to a custom thank-you page
+            }, 500);
+        }
+
         particlesJS("particles-js", {
             particles: {
                 number: { value: 100 },

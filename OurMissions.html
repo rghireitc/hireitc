@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>HIREITC LLC - Our Mission</title>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <style>
+        body {
+            background: linear-gradient(to right, #1a1a2e, #16213e);
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: 0.3s;
+        }
+        
+        .navbar a:hover {
+            color: #ffcc66;
+            transform: scale(1.1);
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .logo-image {
+            background-image: url("circular_logo.png");
+            background-size: cover;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 20px auto;
+            border: 5px solid #fdf5e6;
+        }
+
+        .mission-panel {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .mission-panel h2 {
+            color: #ffcc66;
+        }
+
+        .image-spot {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            margin: 20px auto;
+        }
+
+        .contact {
+            margin-top: 20px;
+            color: #fdf5e6;
+        }
+
+        .contact a {
+            color: #ffcc66;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="OurMissions.html">Our Mission</a>
+    </div>
+
+    <div class="container">
+        <div class="logo-image"></div>
+        <p class="profession"><strong style="color: #fdf5e6">HIREITC<span style="color: #ffcc66"> LLC</span></strong></p>
+        <p class="bio"><strong>SOFTWARE CONSULTANCY COMPANY</strong></p>
+
+        <div class="mission-panel">
+            <h2>Our Mission</h2>
+            <p>At <strong>HIREITC LLC</strong>, our mission is to empower businesses through innovative IT solutions. We strive to deliver exceptional consulting services that drive efficiency and growth.</p>
+        </div>
+
+        <div class="contact">
+            <p><strong>CONTACT US</strong></p>
+            <p><a href="tel:+8452357105">+8452357105</a></p>
+            <p><a href="mailto:rg@hireitc.com">rg@hireitc.com</a></p>
+        </div>
+    </div>
+
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 100 },
+                shape: { type: "circle" },
+                size: { value: 3 },
+                move: { speed: 2 }
+            }
+        });
+    </script>
+</body>
+</html>
